@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Ingeniører Uten Grenser Organisasjonsoversikt</title>
+
+	<script type="text/javascript" src="https://rawgit.com/KevinKaffe/IUGjs/master/scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="https://rawgit.com/KevinKaffe/IUGjs/master/scripts/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="https://rawgit.com/KevinKaffe/IUGjs/master/scripts/jquery.history.js"></script>
+	<script type="text/javascript" src="https://rawgit.com/KevinKaffe/IUGjs/master/scripts/jquery.tooltip.min.js"></script>
+	<script type="text/javascript" src="https://rawgit.com/KevinKaffe/IUGjs/master/scripts/raphael-min.js"></script>
+	<script type="text/javascript" src="https://rawgit.com/KevinKaffe/IUGjs/master/scripts/Tween.js"></script>
+	<script type="text/javascript" src="https://rawgit.com/KevinKaffe/IUGjs/master/scripts/bubbletree.js"></script>
+	<script type="text/javascript" src="http://assets.openspending.org/openspendingjs/master/lib/aggregator.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://rawgit.com/KevinKaffe/IUGjs/master/styles/bubbletree.css" />
+	<script type="text/javascript" src="https://rawgit.com/KevinKaffe/IUGjs/master/styles/cofog.js"></script>
+
+
+</head>
+<body>
+    <script type="text/javascript">
+
+		$(function() {
+			var color1='#5555AA';
+            var color2='#555599';
+			var data = {
+				label: 'Oversikt',
+				amount: 70,
+                nodeDesc:"Her ser du de forskjellige avdelingene ved IUG NTNU. Du kan klikke deg gjennom organisasjonen. Du kan klikke på de blåe bobblene for å bli redirektert til nettsider som inneholder mer spesifikk informasjon.",color: '#009933',  // color for root node, will be inherited by children
+				children: [
+					{ label: 'Styret', amount:55, nodeDesc:"Dette er en beskrivelse av styret, den vil etterhvert bli fylt ut :)", children: [
+						{label: 'Styret til IUG består av ...............', amount: 30, color:'#00FF00'}, 
+						{label:'I tillegg har styret ansvaret over økonomigruppa..........', amount:30, color: 
+'#00FF00'}
+						]
+					},
+					{ label: 'Profilering', amount: 35, nodeDesc:'Profileringsgruppen ved Ingeniører Uten Grenser avdelingen ved NTNU er ansvarlig for å markedsføre hele IUG Norge.</br></br> Dette gjøres ved blandt annet å skape grafikk og arrangere stands til oppkommende arrangementer. Vi har også ansvaret for nettstedet til IUG, og profilering på sosiale medier. <br><br>Det er altså profileringsgruppens jobb å få folk til å vite om oss.', children: [
+						{label: 'Nettsiden', amount:25, gotLink:1, link:'https://www.iug.no', color:color1},
+						{label: 'Oppkommende arrangementer', gotLink:1, link:'https://www.iug.no/norge/allearrangementer', color:color1, amount:25}
+						]
+					},
+					{ label: 'Kompetanse', amount: 35, nodeDesc:'Kompetansegruppen ved Ingeniører Uten Grensers avdeling ved NTNU er ansvarlige for alt det faglige innenfor ingeniørmessig bistand. <br><br>Hovedoppgaven til gruppen er å jobbe med Master med Mening (MmM) som er et tilbud vi i IUG tilbyr som er en masteroppgave knyttet opp mot bistand. Når man skriver en MmM har man mulighet til å skrive en faglig rettet masteroppgave, mulighet for feltreise og påvirke andre menneskers liv med oppgaven sin. <br><br>Andre faglige aktiviteter kompetansegruppen driver med er intern og ekstern kursing, bistandsrelaterte workshoper, Mapathons, Waterworld - En Eksperter i Team-landsby, nettverksbygging og bistandsprosjekter fra eksterne aktører. <br><br>Klikk på bobblene til venstre for å utforske prosjekter.', children: [
+						{label: '<b>Missing Maps</b><br>Bli med å kartlegge utsatte områder i utviklingsland.', amount:20,gotLink:1,color:color1, link:'http://www.missingmaps.org/'},
+						{label: '<b>Intern Kursing</b><br>Lær mer om', amount: 20,gotLink:1,color:color1, link:'http://www.iug.no/kurs'},
+						{label: '<b>Humanitært nettverk</b><br>', amount:20,gotLink:1,color:color1, link:'http://www.iug.no/ntnu/humanitaertnettverk'},
+						{label: '<b>Bachelor og master med mening</b><br>Skriv en Bachelor eller Masteroppgave som hjelper de som trenger det.',amount:20,gotLink:1,color:color1, link:'http://www.iug.no/ntnu/vilduskrive'}
+						]
+					},
+					{ label: 'Hyggekomité', amount:35, nodeDesc:'', children: [
+						{label: 'Hyggekomitèen sørger for at alle har det fint innad IUG', amount:30, label2: 'test'},
+						{label: 'Dette gjøres ved blant annet hytteturer, julebord og andre aktiviteter.', amount:30 
+}, 
+						{amount: 30, label:'TestTest', gotLink:1, link:'https://www.iug.no/ntnu#ntnu/master'},
+                        {label: 'Opptak', amount:30, gotLink:1, color:color1, link:'http://www.iug.no/ntnu/omopptak'}
+						] 
+					},
+					{label: 'Arrangement', amount: 35, children: [
+						{label:'Arrangementgruppa driver med arrangering av workshops', amount:30, color:color1},
+						{label:'Workshoppene tilbyr en interaktiv og spennende måte å lære mer om bistand', 
+amount:30, 
+color:color1},
+						{label:'Arrangementer', amount:30, children:[
+							{label:'<b>Borderless:</b></br>En festival som viser idealet om den globale ingeniør', 
+amount:20, color:color1},
+							{label:'<b>Hverdagshelter:</b></br>Inspirerer deg til å skape en bedre verden.', 
+amount:20, color:color1},
+							{label:'<b>Create and Make:</b></br>Lar deg hoppe inn i rollen som en ingeniør i feltarbeid.', amount:20, color:color1}
+						]}
+					
+					]}
+				]
+			}
+			new BubbleTree({
+				data: data,
+				container: '.bubbletree',
+				formatValue: function(value){
+				return "IUG";
+				}
+			});
+		});
+
+	</script>
+	<div class="bubbletree-wrapper">
+		<div class="bubbletree"></div>
+	</div>
+</body>
+</html>
