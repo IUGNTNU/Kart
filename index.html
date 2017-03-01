@@ -22,31 +22,32 @@
 		$(function() {
 			const color1='#5555AA';
             const color2='#555599';
-            const color3='#dae539';
+            const color3='#c9d428';
 			var data = {
 				label: 'Oversikt',
 				amount: 70,
+                imgSrc:'tellus.jpg',
                 nodeDesc:"Her ser du de forskjellige avdelingene ved IUG NTNU. Du kan klikke deg gjennom organisasjonen. Du kan klikke på de blåe bobblene for å bli redirektert til nettsider som inneholder mer spesifikk informasjon.",color: '#009933',  // color for root node, will be inherited by children
 				children: [
-					{ label: 'Styret', amount:55, nodeDesc:"Styret ved IUG NTNU består av en leder for Gløshaugen og Kalvskinnet, en nestleder, samt lederne for alle arbeidsgruppene ved IUG. Styret er også knyttet til økonomigruppa. Hovedmålet til styret er å knytte de forskjellige arbeidsgruppene sammen. <br><br> Styret har også oppgaver som å rapportere avdelingens aktivitet, og skal også overføre erfaringer til det neste styret. Leder og nestleder er også ansvarlig for økonomien til avdelingen.", children: [
-						{label: 'Kompetanseleder', amount: 30, color:color3}, 
-						{label:'Leder', amount:30, color: 
+					{ label: 'Styret', amount:55, imgSrc:"styret.JPG",nodeDesc:"Styret ved IUG NTNU består av en leder for Gløshaugen og Kalvskinnet, en nestleder, samt lederne for alle arbeidsgruppene ved IUG. Styret er også knyttet til økonomigruppa. Hovedmålet til styret er å knytte de forskjellige arbeidsgruppene sammen. <br><br> Styret har også oppgaver som å rapportere avdelingens aktivitet, og skal også overføre erfaringer til det neste styret. Leder og nestleder er også ansvarlig for økonomien til avdelingen.", children: [
+						{label: '<b>Kompetanseleder</b><br>Har ansvaret for kompetansegruppa.', amount: 30, color:color3}, 
+						{label:'<b>Leder</b><br>Lederen har ansvaret for at styret fungerer som det skal.', amount:30, color: 
 color3},
-                        {label: 'Profileringsleder', amount: 30, color:color3}, 
-						{label:'Nestleder', amount:30, color: 
+                        {label: '<b>Profileringsleder</b><br>Profileringslederen sørger for at profileringsgruppa fungerer optimalt.', amount: 30, color:color3}, 
+						{label:'<b>Nestleder</b><br>Nestleder skal hjelpe lederen i å styre styret.', amount:30, color: 
 color3},
-                        						{label: 'Arrangementleder', amount: 30, color:color3}, 
-						{label:'HR-ansvarlig', amount:30, color: 
+                        						{label: '<b>Arrangementleder</b><br>Arrangementleder skal sørge for at arrangementer blir gjennomført.', amount: 30, color:color3}, 
+						{label:'<b>HR-ansvarlig</b><br>HR-Ansvarlig sørger for at alle har det godt innad IUG.', amount:30, color: 
 color3},
-                        {label: 'Leder-Kalvskinnet', amount: 30, color:color3}, 
+                        {label: '<b>Leder-Kalvskinnet</b>Lederen for Kalvskinnes sørger for at arbeidsgruppene ved Kalvskinnet funker optimalt.', amount: 30, color:color3}, 
                     ]
 					},
-					{ label: 'Profilering', amount: 35, nodeDesc:'Profileringsgruppen ved Ingeniører Uten Grenser avdelingen ved NTNU er ansvarlig for å markedsføre hele IUG Norge.</br></br> Dette gjøres ved blandt annet å skape grafikk og arrangere stands til oppkommende arrangementer. Vi har også ansvaret for nettstedet til IUG, og profilering på sosiale medier. <br><br>Det er altså profileringsgruppens jobb å få folk til å vite om oss.', children: [
+					{ label: 'Profilering', amount: 35,imgSrc:'profilering.jpg', nodeDesc:'Profileringsgruppen ved Ingeniører Uten Grenser avdelingen ved NTNU er ansvarlig for å markedsføre hele IUG Norge.</br></br> Dette gjøres ved blandt annet å skape grafikk og arrangere stands til oppkommende arrangementer. Vi har også ansvaret for nettstedet til IUG, og profilering på sosiale medier. <br><br>Det er altså profileringsgruppens jobb å få folk til å vite om oss.', children: [
 						{label: '<b>Nettsiden</b><br>Du har nok vært innom nettsiden vår, et nytt prosjekt siden 2016', amount:25, gotLink:1, link:'https://www.iug.no', color:color1},
 						{label: '<b>Oppkommende arrangementer</b><br>Profilering sørger for både grafikk og formidling av arrangementer.', gotLink:1, link:'https://www.iug.no/norge/allearrangementer', color:color1, amount:25}
 						]
 					},
-					{ label: 'Kompetanse', amount: 35, imgSrc:"https://i.stack.imgur.com/WfFVj.jpg?s=32&g=1", nodeDesc:'Kompetansegruppen ved Ingeniører Uten Grensers avdeling ved NTNU er ansvarlige for alt det faglige innenfor ingeniørmessig bistand. <br><br>Hovedoppgaven til gruppen er å jobbe med Master med Mening (MmM) som er et tilbud vi i IUG tilbyr som er en masteroppgave knyttet opp mot bistand. Når man skriver en MmM har man mulighet til å skrive en faglig rettet masteroppgave, mulighet for feltreise og påvirke andre menneskers liv med oppgaven sin. <br><br>Andre faglige aktiviteter kompetansegruppen driver med er intern og ekstern kursing, bistandsrelaterte workshoper, Mapathons, Waterworld - En Eksperter i Team-landsby, nettverksbygging og bistandsprosjekter fra eksterne aktører. <br><br>Klikk på bobblene til venstre for å utforske prosjekter.', children: [
+					{ label: 'Kompetanse', amount: 35, imgSrc:"kompetanse.jpg", nodeDesc:'Kompetansegruppen ved Ingeniører Uten Grensers avdeling ved NTNU er ansvarlige for alt det faglige innenfor ingeniørmessig bistand. <br><br>Hovedoppgaven til gruppen er å jobbe med Master med Mening (MmM) som er et tilbud vi i IUG tilbyr som er en masteroppgave knyttet opp mot bistand. Når man skriver en MmM har man mulighet til å skrive en faglig rettet masteroppgave, mulighet for feltreise og påvirke andre menneskers liv med oppgaven sin. <br><br>Andre faglige aktiviteter kompetansegruppen driver med er intern og ekstern kursing, bistandsrelaterte workshoper, Mapathons, Waterworld - En Eksperter i Team-landsby, nettverksbygging og bistandsprosjekter fra eksterne aktører. <br><br>Klikk på bobblene til venstre for å utforske prosjekter.', children: [
 						{label: '<b>Missing Maps</b><br>Bli med å kartlegge utsatte områder i utviklingsland.', amount:20,gotLink:1,color:color1, link:'http://www.missingmaps.org/'},
 						{label: '<b>Intern Kursing</b><br>Lær mer om', amount: 20,gotLink:1,color:color1, link:'http://www.iug.no/kurs'},
 						{label: '<b>Humanitært nettverk</b><br>', amount:20,gotLink:1,color:color1, link:'http://www.iug.no/ntnu/humanitaertnettverk'},
@@ -60,7 +61,7 @@ color3},
                         {label: '<b>Sommeravsluttning</b><br>Mot slutten av vårsemesteret blir det arrangert en sommeravsluttning', amount:30, color:color3}
 						] 
 					},
-					{label: 'Arrangement', amount: 35,nodeDesc:'Arrangementgruppa driver med arrangering av workshops. Workshoppene tilbyr en interaktiv og spennende måte å lære mer om bistand på. Blandt de store arrangementene som blir arrangert er Borderless, Create&Make, og Hverdagshelter.', children: [
+					{label: 'Arrangement', amount: 35, imgSrc:'arrangement.jpg', nodeDesc:'Arrangementgruppa driver med arrangering av workshops. Workshoppene tilbyr en interaktiv og spennende måte å lære mer om bistand på. Blandt de store arrangementene som blir arrangert er Borderless, Create&Make, og Hverdagshelter.', children: [
 							{label:'<b>Borderless:</b></br>En festival som viser idealet om den globale ingeniør', 
 amount:20, color:color3},
 							{label:'<b>Hverdagshelter:</b></br>Inspirerer deg til å skape en bedre verden.', 
