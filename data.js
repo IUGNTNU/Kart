@@ -1,12 +1,13 @@
-			const color1='#5555AA';
-            const color2='#555599';
-            const color3='#c9d428';
+			const COLOR1='#5555AA';
+            const COLOR2='#009933';
+            const COLOR3='#c9d428';
 
 var data = {
 				label: 'Oversikt',
 				amount: 70,
                 imgSrc:'tellus.jpg',
-                nodeDesc:"Her ser du de forskjellige avdelingene ved IUG NTNU. Du kan klikke deg gjennom organisasjonen. Du kan klikke på de blåe bobblene for å bli redirektert til nettsider som inneholder mer spesifikk informasjon.",color: '#009933',  // color for root node, will be inherited by children
+                nodeDesc:"Her ser du de forskjellige avdelingene ved IUG NTNU. Du kan klikke deg gjennom organisasjonen. Du kan klikke på de blå bobblene for å bli redirektert til nettsider som inneholder mer spesifikk informasjon.",
+                color:COLOR2,  // color for root node, will be inherited by children
 				children: [
 					{ 
                         label: 'Styret', 
@@ -17,36 +18,36 @@ var data = {
 						{
                             label: '<b>Kompetanseleder</b><br>Har ansvaret for kompetansegruppa.', 
                             amount: 30, 
-                            color:color3
+                            color:COLOR3
                         }, 
 						{
                             label:'<b>Leder</b><br>Lederen har ansvaret for at styret fungerer som det skal.', 
                             amount:30, 
-                            color: color3
+                            color: COLOR3
                         },
                         {
                             label: '<b>Profileringsleder</b><br>Profileringslederen sørger for at profileringsgruppa fungerer optimalt.', 
                             amount: 30, 
-                            color:color3
+                            color:COLOR3
                         }, 
 						{
                             label:'<b>Nestleder</b><br>Nestleder skal hjelpe lederen i å styre styret.', 
                             amount:30, 
-                            color:color3
+                            color:COLOR3
                         },
                         {
                             label: '<b>Arrangementleder</b><br>Arrangementleder skal sørge for at arrangementer blir gjennomført.', 
                             amount: 30, 
-                            color:color3
+                            color:COLOR3
                         }, 
 						{
                             label:'<b>HR-ansvarlig</b><br>HR-Ansvarlig sørger for at alle har det godt innad IUG.', 
                             amount:30, 
-                            color: color3
+                            color: COLOR3
                         },
                         {
                             label: '<b>Leder-Kalvskinnet</b>Lederen for Kalvskinnes sørger for at arbeidsgruppene ved Kalvskinnet funker optimalt.', amount: 30, 
-                            color:color3
+                            color:COLOR3
                         }, 
                         ]
 					},
@@ -62,12 +63,12 @@ var data = {
                             amount:25, 
                             gotLink:1, 
                             link:'https://www.iug.no', 
-                            color:color1
+                            color:COLOR1
                         },
 						{
                             label: '<b>Oppkommende arrangementer</b><br>Profilering sørger for både grafikk og formidling av arrangementer.', gotLink:1, 
                             link:'https://www.iug.no/norge/allearrangementer', 
-                            color:color1, 
+                            color:COLOR1, 
                             amount:25
                         }
 						]
@@ -82,28 +83,28 @@ var data = {
                             label: '<b>Missing Maps</b><br>Bli med å kartlegge utsatte områder i utviklingsland.', 
                             amount:20,
                             gotLink:1,
-                            color:color1, 
+                            color:COLOR1, 
                             link:'http://www.missingmaps.org/'
                         },
 						{
                             label: '<b>Intern Kursing</b><br>Lær mer om', 
                             amount: 20,
                             gotLink:1,
-                            color:color1, 
+                            color:COLOR1, 
                             link:'http://www.iug.no/kurs'
                         },
 						{
                             label: '<b>Humanitært nettverk</b><br>', 
                             amount:20,
                             gotLink:1,
-                            color:color1, 
+                            color:COLOR1, 
                             link:'http://www.iug.no/ntnu/humanitaertnettverk'
                         },
 						{
                             label: '<b>Bachelor og master med mening</b><br>Skriv en Bachelor eller Masteroppgave som hjelper de som trenger det.',
                             amount:20,
                             gotLink:1,
-                            color:color1, 
+                            color:COLOR1, 
                             link:'http://www.iug.no/ntnu/vilduskrive'
                         }
 						]
@@ -118,23 +119,23 @@ var data = {
                             label: '<b>Opptak</b><br>Søk IUG og bli med på morroa, vel!', 
                             amount:30, 
                             gotLink:1, 
-                            color:color1, 
+                            color:COLOR1, 
                             link:'http://www.iug.no/ntnu/omopptak'
                         },
                         {
                             label: '<b>Hyttetur</b><br>Hytteturen arrangeres hver vår og høst, og hjelper IUG å bli kjent med hverandre', 
                             amount:30, 
-                            color:color3
+                            color:COLOR3
                         },
                         {
                             label: '<b>Juleavsluttning</b><br>Mot slutten av høstsemesteret blir det arrangert en juleavsluttning', 
                             amount:30, 
-                            color:color3
+                            color:COLOR3
                         },
                         {
                             label: '<b>Sommeravsluttning</b><br>Mot slutten av vårsemesteret blir det arrangert en sommeravsluttning', 
                             amount:30, 
-                            color:color3
+                            color:COLOR3
                         }
 						] 
 					},
@@ -146,17 +147,17 @@ var data = {
 							{
                                 label:'<b>Borderless:</b></br>En festival som viser idealet om den globale ingeniør', 
                                 amount:20, 
-                                color:color3
+                                color:COLOR3
                             },
 							{
                                 label:'<b>Hverdagshelter:</b></br>Inspirerer deg til å skape en bedre verden.', 
                                 amount:20, 
-                                color:color3
+                                color:COLOR3
                             },
 							{
                                 label:'<b>Create and Make:</b></br>Lar deg hoppe inn i rollen som en ingeniør i feltarbeid.', 
                                 amount:20, 
-                                color:color3
+                                color:COLOR3
                             }
 					
 					]
