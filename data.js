@@ -70,6 +70,12 @@ var data = {
                             link:'https://www.iug.no/norge/allearrangementer', 
                             color:COLOR1, 
                             amount:25
+                        },
+                        {
+                            label: '<b>Facebook side</b><br>Sjekk ut vår facebook side for å holde deg oppdatert på hva som skjer i IUG.', gotLink:1, 
+                            link:'https://www.facebook.com/iugntnu/?fref=ts', 
+                            color:COLOR1, 
+                            amount:25
                         }
 						]
 					},
